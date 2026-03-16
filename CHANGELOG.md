@@ -1,3 +1,10 @@
+# Release v2.1.1 - 2026-03-17
+
+## Improvements
+- Corrected repository link in README.md
+
+---
+
 # Release v1.1.6 - 2026-03-17
 
 ## Improvements
