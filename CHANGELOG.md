@@ -1,3 +1,11 @@
+# Release v1.1.4 - 2026-03-16
+
+## Improvements
+- Renamed extension package identifier to `inandi-git-exclude` to resolve a VS Code Marketplace name conflict
+- Updated display name to `Git Exclude - Local Ignore` to resolve a VS Code Marketplace display name conflict
+
+---
+
 # Release v1.1.3 - 2026-03-16
 
 ## Improvements
