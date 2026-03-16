@@ -1,4 +1,4 @@
-# Git Exclude - Local: Technical Documentation
+# Git Exclude - Technical Documentation
 
 ## Overview
 

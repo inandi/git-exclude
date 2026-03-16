@@ -3,13 +3,13 @@
   <p><strong>Local Git Ignore Rules, One Right-Click Away</strong></p>
 </div>
 
-Tired of messy `git status` outputs from personal files you can't commit to `.gitignore`? Git Exclude - Local makes it effortless to hide files and folders from Git locally — without affecting the shared `.gitignore` — with just one right-click!
+Tired of messy `git status` outputs from personal files you can't commit to `.gitignore`? `Git Exclude - Local` makes it effortless to hide files and folders from Git locally — without affecting the shared `.gitignore` — with just one right-click!
 
-## What is Git Exclude - Local?
+## What is `Git Exclude - Local`?
 
-Git Exclude - Local is a simple yet necessary extension that lets you append files and folders to your repository's private exclude file (`.git/info/exclude`) directly from the Explorer context menu.
+`Git Exclude - Local` is a simple yet necessary extension that lets you append files and folders to your repository's private exclude file (`.git/info/exclude`) directly from the Explorer context menu.
 
-## Why Use Git Exclude - Local?
+## Why Use `Git Exclude - Local`?
 
 - **Save Time**: No more manually navigating to `.git/info/` to edit the exclude file
 - **Stay Clean**: Personal files (scratchpads, DB dumps, local configs) vanish from your untracked list instantly
@@ -56,7 +56,7 @@ When you right-click and select **Add to .git/exclude**, the extension:
 
 ### Storage Location
 
-Git Exclude - Local writes to the standard Git exclude file inside your repository:
+`Git Exclude - Local` writes to the standard Git exclude file inside your repository:
 
 - **Location**: `.git/info/exclude` at the root of your workspace
 - **Private by default**: This file is never tracked or committed — it exists only on your machine
@@ -70,7 +70,7 @@ Git Exclude - Local writes to the standard Git exclude file inside your reposito
 
 ## Support the Project
 
-If Git Exclude - Local has made your workflow easier, consider supporting (No Pressure):
+If `Git Exclude - Local` has made your workflow easier, consider supporting (No Pressure):
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/igobinda)
 
