@@ -1,8 +1,8 @@
 {
   "name": "inandi-git-exclude",
-  "displayName": "Git Exclude",
+  "displayName": "Git Exclude - Local",
   "description": "Add files and folders to your local .git/info/exclude with a single right-click.",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "publisher": "iNandi",
   "icon": "media/logo.png",
   "author": {
@@ -29,7 +29,7 @@
       {
         "command": "gitExclude.addToExclude",
         "title": "$(diff-ignored) Add to .git/exclude",
-        "category": "Git Exclude"
+        "category": "Git Exclude - Local"
       }
     ],
     "menus": {
