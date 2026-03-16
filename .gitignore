@@ -40,3 +40,7 @@ coverage/
 .nyc_output/
 
 .cursor/
+dev.md
+
+# Publishing secrets
+.publish-secrets
