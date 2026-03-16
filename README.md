@@ -1,48 +1,88 @@
-# Git Exclude
+<div align="center">
+  <h1>Git Exclude [Beta]</h1>
+  <p><strong>Local Git Ignore Rules, One Right-Click Away</strong></p>
+</div>
 
-A streamlined VS Code utility for managing local Git ignore rules. Add files and folders to your repository's private exclude file (`.git/info/exclude`) with a single right-click — keeping your local environment clean without touching the shared `.gitignore`.
+Tired of messy `git status` outputs from personal files you can't commit to `.gitignore`? Git Exclude makes it effortless to hide files and folders from Git locally — without affecting the shared `.gitignore` — with just one right-click!
 
-## The Problem it Solves
+## What is Git Exclude?
 
-Most developers have personal files (scratchpads, local DB dumps, custom IDE configs) that don't belong in the team's shared `.gitignore`. Manually navigating to the hidden `.git/info/` folder to edit the exclude file is a friction point that most skip — leading to messy `git status` outputs. Git Exclude turns this multi-step process into a single right-click.
+Git Exclude is a simple yet necessary extension that lets you append files and folders to your repository's private exclude file (`.git/info/exclude`) directly from the Explorer context menu.
 
-## Features
+## Why Use Git Exclude?
 
-- **Context Menu Shortcut** — Adds a "Add to .git/exclude" option to the file explorer.
-- **Automatic Path Resolution** — Calculates the correct relative path from the workspace root.
-- **Directory Awareness** — Appends a trailing slash for folders so Git treats them correctly.
-- **Cross-Platform Normalization** — Converts Windows backslashes (`\`) to Git-standard forward slashes (`/`).
-- **Duplicate Prevention** — Skips appending if the path is already present in the exclude file.
+- **Save Time**: No more manually navigating to `.git/info/` to edit the exclude file
+- **Stay Clean**: Personal files (scratchpads, DB dumps, local configs) vanish from your untracked list instantly
+- **Team-Safe**: Nothing is added to the shared `.gitignore` — your ignores stay local and private
+- **Directory-Aware**: Automatically appends a trailing slash for folders so Git treats them correctly
+- **Cross-Platform**: Converts Windows backslashes (`\`) to Git-standard forward slashes (`/`)
+- **Duplicate-Safe**: Skips writing if the path is already present in the exclude file
 
-## How to Use
+## Getting Started
 
-1. Right-click any file or folder in the Explorer panel.
-2. Select **Add to .git/exclude**.
-3. The path is appended to `.git/info/exclude` — the file immediately disappears from your untracked list.
+### Installation
 
-## How it Differs from `.gitignore`
+1. Open VS Code or Cursor
+2. Go to the Extensions view
+3. Search for **Git Exclude**
+4. Click Install
+
+### First Steps
+
+1. **Open your project** in VS Code or Cursor
+2. **Right-click** any file or folder in the Explorer panel
+3. Select **Add to .git/exclude**
+4. The file or folder immediately disappears from your untracked list in Git
+
+## How It Works
+
+### The Difference from `.gitignore`
 
 | | `.gitignore` | `.git/info/exclude` |
 |---|---|---|
 | Tracked in repo | Yes | No |
 | Shared with team | Yes | No |
-| Use case | Project-wide rules | Personal/local rules |
+| Use case | Project-wide rules | Personal/local rules only |
 
-## Development
+### What Happens Under the Hood
 
-```bash
-# Install dependencies
-npm install
+When you right-click and select **Add to .git/exclude**, the extension:
 
-# Compile TypeScript
-npm run compile
+1. **Resolves the path**: Calculates the relative path from your workspace root to the selected file or folder
+2. **Normalizes slashes**: Converts any Windows backslashes (`\`) to forward slashes (`/`) for Git compatibility
+3. **Detects directories**: Appends a trailing `/` automatically if the selected item is a folder
+4. **Checks for duplicates**: Reads the existing exclude file and skips writing if the path is already present
+5. **Appends the entry**: Writes the path to `.git/info/exclude` (creating the file with a standard Git header if it doesn't exist yet)
 
-# Watch mode (recompiles on save)
-npm run watch
-```
+### Storage Location
 
-Press `F5` in VS Code to launch the Extension Development Host and test the extension.
+Git Exclude writes to the standard Git exclude file inside your repository:
+
+- **Location**: `.git/info/exclude` at the root of your workspace
+- **Private by default**: This file is never tracked or committed — it exists only on your machine
+- **Manually editable**: You can open and edit the file directly at any time if needed
+
+## Tips & Tricks
+
+- **Use for generated files**: Local build artifacts or tool outputs that shouldn't be in `.gitignore` are perfect candidates
+- **Works on folders**: Right-click a whole folder (like `tmp/` or `scratch/`) to exclude everything inside it at once
+- **Safe to re-run**: Running the command on an already-excluded path does nothing — no duplicate entries
+
+## Support the Project
+
+If Git Exclude has made your workflow easier, consider supporting (No Pressure):
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/igobinda)
+
+## Need Help?
+
+- **Issues**: Found a bug or have a feature request? Open an issue on GitHub
+- **Repository**: [github.com/igobinda/git-exclude](https://github.com/igobinda/git-exclude)
 
 ## License
 
-MIT
+This project is licensed under the MIT License - feel free to use it however you'd like!
+
+---
+
+**Made with ❤️ by Gobinda Nandi**
