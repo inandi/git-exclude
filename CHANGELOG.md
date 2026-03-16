@@ -1,3 +1,13 @@
+# Release v1.1.6 - 2026-03-17
+
+## Improvements
+- Renamed extension to "Git Exclude - Local" consistently across README, documentation, user-facing messages, and source code
+- Enhanced README for clarity and readability
+- Refined documentation titles in `doc/PROCESS.md` and `doc/TECHNICAL.md` for consistency
+- Added JSDoc code documentation to `src/extension.ts`
+
+---
+
 # Release v1.1.4 - 2026-03-16
 
 ## Improvements
