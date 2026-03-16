@@ -1,1 +1,1 @@
-# omit
+# Git Exlclude
