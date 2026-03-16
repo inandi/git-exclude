@@ -1,8 +1,8 @@
-# Git Exclude - Technical Documentation
+# Git Exclude - Local: Technical Documentation
 
 ## Overview
 
-Git Exclude is a VS Code extension built with TypeScript that provides a context menu shortcut for appending files and folders to a repository's local `.git/info/exclude` file. It operates entirely through the VS Code file explorer and has no UI panels or status bar elements — the entire interaction is a single command invoked from a right-click.
+Git Exclude - Local is a VS Code extension built with TypeScript that provides a context menu shortcut for appending files and folders to a repository's local `.git/info/exclude` file. It operates entirely through the VS Code file explorer and has no UI panels or status bar elements — the entire interaction is a single command invoked from a right-click.
 
 ## Architecture
 
@@ -63,7 +63,7 @@ The command is triggered from the Explorer context menu and receives a `vscode.U
    The relative path is appended to the exclude file with a trailing newline, ensuring proper line separation regardless of the file's current ending.
 
 9. **Notification**  
-   A success message is shown: `"Git Exclude: Added '<path>' to .git/info/exclude."`
+   A success message is shown: `"Git Exclude - Local: Added '<path>' to .git/info/exclude."`
 
 ## Storage
 

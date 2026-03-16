@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext): void {
     async (uri: vscode.Uri | undefined) => {
       if (!uri) {
         vscode.window.showErrorMessage(
-          'Git Exclude: Run this command from the file explorer context menu.'
+          'Git Exclude - Local: Run this command from the file explorer context menu.'
         );
         return;
       }
@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext): void {
       const workspaceFolder = vscode.workspace.getWorkspaceFolder(uri);
       if (!workspaceFolder) {
         vscode.window.showErrorMessage(
-          'Git Exclude: File is not inside an open workspace.'
+          'Git Exclude - Local: File is not inside an open workspace.'
         );
         return;
       }
@@ -26,7 +26,7 @@ export function activate(context: vscode.ExtensionContext): void {
 
       if (!fs.existsSync(path.join(workspaceRoot, '.git'))) {
         vscode.window.showErrorMessage(
-          'Git Exclude: No .git directory found in the workspace root.'
+          'Git Exclude - Local: No .git directory found in the workspace root.'
         );
         return;
       }
@@ -62,7 +62,7 @@ export function activate(context: vscode.ExtensionContext): void {
       const lines = existingContent.split('\n').map((l) => l.trim());
       if (lines.includes(relativePath)) {
         vscode.window.showInformationMessage(
-          `Git Exclude: '${relativePath}' is already in .git/info/exclude.`
+          `Git Exclude - Local: '${relativePath}' is already in .git/info/exclude.`
         );
         return;
       }
@@ -71,7 +71,7 @@ export function activate(context: vscode.ExtensionContext): void {
       fs.appendFileSync(excludeFile, `${separator}${relativePath}\n`, 'utf8');
 
       vscode.window.showInformationMessage(
-        `Git Exclude: Added '${relativePath}' to .git/info/exclude.`
+        `Git Exclude - Local: Added '${relativePath}' to .git/info/exclude.`
       );
     }
   );

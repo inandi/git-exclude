@@ -1,6 +1,6 @@
-# Git Exclude - Development and Publishing Process
+# Git Exclude - Local: Development and Publishing Process
 
-This document outlines the complete process for running, developing, and publishing the Git Exclude VS Code extension.
+This document outlines the complete process for running, developing, and publishing the Git Exclude - Local VS Code extension.
 
 ## Prerequisites
 
