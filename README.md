@@ -77,7 +77,7 @@ If `Git Exclude - Local` has made your workflow easier, consider supporting (No 
 ## Need Help?
 
 - **Issues**: Found a bug or have a feature request? Open an issue on GitHub
-- **Repository**: [github.com/igobinda/git-exclude](https://github.com/igobinda/git-exclude)
+- **Repository**: [github.com/inandi/git-exclude](https://github.com/inandi/git-exclude)
 
 ## License
 
