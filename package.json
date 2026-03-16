@@ -1,0 +1,58 @@
+{
+  "name": "git-exclude",
+  "displayName": "Git Exclude",
+  "description": "Add files and folders to your local .git/info/exclude with a single right-click.",
+  "version": "0.0.1",
+  "publisher": "igobinda",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "git",
+    "gitignore",
+    "exclude",
+    "ignore"
+  ],
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igobinda/git-exclude"
+  },
+  "license": "MIT",
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:gitExclude.addToExclude"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitExclude.addToExclude",
+        "title": "$(diff-ignored) Add to .git/exclude",
+        "category": "Git Exclude"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "gitExclude.addToExclude",
+          "group": "7_modification@100",
+          "when": "explorerResourceIsFolder || resourceScheme == file"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  }
+}
