@@ -1,3 +1,16 @@
+# Release v1.1.3 - 2026-03-16
+
+## Improvements
+- Added extension logo/icon (`media/logo.png`)
+- Broadened VS Code engine compatibility to `^1.74.0` and aligned dev dependencies accordingly
+- Added author information to `package.json`
+- Added MIT License
+- Added technical and process documentation (`doc/TECHNICAL.md`, `doc/PROCESS.md`)
+- Added publishing and release management infrastructure (`release.sh`, `.publish-secrets.sample`, `.vscodeignore`)
+- Enhanced README with full usage instructions, feature descriptions, and tips
+
+---
+
 # Release v1.1.2 - 2026-03-16
 
 ## New Features
